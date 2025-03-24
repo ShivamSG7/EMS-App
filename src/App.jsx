@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
+import Employees from './components/Employees';
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -94,7 +95,7 @@ function App() {
           <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              <Route path="/employees" element={<h2 className="text-2xl font-bold">Employees</h2>} />
+              <Route path="/employees" element={<Employees />} />
               <Route path="/attendance" element={<h2 className="text-2xl font-bold">Attendance</h2>} />
               <Route path="/leave-requests" element={<h2 className="text-2xl font-bold">Leave Requests</h2>} />
               <Route path="/reports" element={<h2 className="text-2xl font-bold">Reports</h2>} />
